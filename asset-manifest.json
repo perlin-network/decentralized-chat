@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/decentralized-chat/static/css/main.44e2af58.chunk.css",
-    "main.js": "/decentralized-chat/static/js/main.7ca76ca8.chunk.js",
-    "main.js.map": "/decentralized-chat/static/js/main.7ca76ca8.chunk.js.map",
+    "main.css": "/decentralized-chat/static/css/main.492dee98.chunk.css",
+    "main.js": "/decentralized-chat/static/js/main.97d358c8.chunk.js",
+    "main.js.map": "/decentralized-chat/static/js/main.97d358c8.chunk.js.map",
     "runtime~main.js": "/decentralized-chat/static/js/runtime~main.f73111cf.js",
     "runtime~main.js.map": "/decentralized-chat/static/js/runtime~main.f73111cf.js.map",
     "static/js/2.2aff5de4.chunk.js": "/decentralized-chat/static/js/2.2aff5de4.chunk.js",
     "static/js/2.2aff5de4.chunk.js.map": "/decentralized-chat/static/js/2.2aff5de4.chunk.js.map",
     "index.html": "/decentralized-chat/index.html",
-    "precache-manifest.b68139013a3a2318aead2f1a56d74292.js": "/decentralized-chat/precache-manifest.b68139013a3a2318aead2f1a56d74292.js",
+    "precache-manifest.7e0589709f6d0e8371cecfe403c0a65d.js": "/decentralized-chat/precache-manifest.7e0589709f6d0e8371cecfe403c0a65d.js",
     "service-worker.js": "/decentralized-chat/service-worker.js",
-    "static/css/main.44e2af58.chunk.css.map": "/decentralized-chat/static/css/main.44e2af58.chunk.css.map"
+    "static/css/main.492dee98.chunk.css.map": "/decentralized-chat/static/css/main.492dee98.chunk.css.map"
   }
 }

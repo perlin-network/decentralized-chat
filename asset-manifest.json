@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/decentralized-chat/static/css/main.44e2af58.chunk.css",
-    "main.js": "/decentralized-chat/static/js/main.8019f87f.chunk.js",
-    "main.js.map": "/decentralized-chat/static/js/main.8019f87f.chunk.js.map",
+    "main.js": "/decentralized-chat/static/js/main.831df5fc.chunk.js",
+    "main.js.map": "/decentralized-chat/static/js/main.831df5fc.chunk.js.map",
     "runtime~main.js": "/decentralized-chat/static/js/runtime~main.f73111cf.js",
     "runtime~main.js.map": "/decentralized-chat/static/js/runtime~main.f73111cf.js.map",
     "static/js/2.46ff530b.chunk.js": "/decentralized-chat/static/js/2.46ff530b.chunk.js",
     "static/js/2.46ff530b.chunk.js.map": "/decentralized-chat/static/js/2.46ff530b.chunk.js.map",
     "index.html": "/decentralized-chat/index.html",
-    "precache-manifest.cf8b18c21843f50f8192d049b9d7369a.js": "/decentralized-chat/precache-manifest.cf8b18c21843f50f8192d049b9d7369a.js",
+    "precache-manifest.f925f9e8fe3c9972e8f6ed1ab43aee7b.js": "/decentralized-chat/precache-manifest.f925f9e8fe3c9972e8f6ed1ab43aee7b.js",
     "service-worker.js": "/decentralized-chat/service-worker.js",
     "static/css/main.44e2af58.chunk.css.map": "/decentralized-chat/static/css/main.44e2af58.chunk.css.map"
   }

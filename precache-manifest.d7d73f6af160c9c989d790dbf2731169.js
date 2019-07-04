@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3e902611c1d4ce26891707232d8bcb3d",
+    "revision": "dd1f4aa6643171a0e7df54dd3a44b490",
     "url": "/decentralized-chat/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/decentralized-chat/static/css/main.44e2af58.chunk.css"
   },
   {
-    "revision": "7e9c83d8e13bb18af3f2",
-    "url": "/decentralized-chat/static/js/2.46ff530b.chunk.js"
+    "revision": "7d95898eb56020edf7d6",
+    "url": "/decentralized-chat/static/js/2.2aff5de4.chunk.js"
   },
   {
     "revision": "b20804949b9ea7ba9957",

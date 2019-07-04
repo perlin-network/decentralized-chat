@@ -221,7 +221,7 @@ const App = () => {
                 <Box width={2 / 4} pr={3}>
                     <textarea disabled={!client || !contract} value={message} placeholder="enter a message..." maxLength={240}
                               onKeyPress={async e => {
-                                  if (e.key === 'Enter') await sendMessage()
+                                  if (e.key === 'Enter' && account.balance >= 250000 && message.length > 0 && message.length <= 240) await sendMessage()
                               }}
                               onChange={evt => setMessage(evt.target.value)} className='fw'/>
                 </Box>

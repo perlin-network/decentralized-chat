@@ -1,9 +1,11 @@
 {
   "name": "decentralized-chat",
+  "homepage": "https://perlin-network.github.io/decentralized-chat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@rebass/grid": "^6.0.0",
+    "gh-pages": "^2.0.1",
     "jsbi": "^2.0.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -12,6 +14,8 @@
     "wavelet-client": "^1.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

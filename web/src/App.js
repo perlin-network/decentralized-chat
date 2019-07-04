@@ -10,7 +10,7 @@ const App = () => {
     const [privateKey, setPrivateKey] = useState(Buffer.from(Wavelet.generateNewWallet().secretKey, "binary").toString("hex"));
     const [client, setClient] = useState(undefined);
     const [node, setNodeInfo] = useState(undefined);
-    const [contractAddress, setContractAddress] = useState('');
+    const [contractAddress, setContractAddress] = useState('9f549686e464b2addfdcd5061deeeb7c622ea430c5f93ddaf5cf8a8f114f8b65');
     const [contract, setContract] = useState(undefined);
     const [message, setMessage] = useState('');
     const [chatLogs, setChatLogs] = useState([]);
@@ -129,7 +129,7 @@ const App = () => {
             </Flex>
             <Flex style={{marginTop: '-0.9em', marginBottom:'4em'}}>
                 <Box style={{textAlign: 'center'}} width={1}>
-                    Powered by <a href="https://wavelet.perlin.net">Wavelet</a>. Click <a href="#">here</a> to learn how it works.
+                    Powered by <a href="https://wavelet.perlin.net">Wavelet</a>. Click <a href="#">here</a> to learn how it works. Join our <a href="https://discord.gg/dMYfDPM">Discord</a> to get PERLs.
                 </Box>
 
             </Flex>

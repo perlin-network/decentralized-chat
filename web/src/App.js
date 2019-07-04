@@ -144,7 +144,7 @@ const App = () => {
       </h2>
       <Box className="text-center" mb={4}>
         Powered by <a href="https://wavelet.perlin.net">Wavelet</a>. Click{' '}
-        <a href="#">here</a> to learn how it works, and{' '}
+        <a href="https://medium.com/perlin-network/build-a-decentralized-chat-using-javascript-rust-webassembly-c775f8484b52">here</a> to learn how it works, and{' '}
         <a href="https://github.com/perlin-network/decentralized-chat">here</a>{' '}
         for the source code. Join our{' '}
         <a href="https://discord.gg/dMYfDPM">Discord</a> to get PERLs.

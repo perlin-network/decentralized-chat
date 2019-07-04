@@ -129,7 +129,7 @@ const App = () => {
             </Flex>
             <Flex style={{marginTop: '-0.9em', marginBottom:'4em'}}>
                 <Box style={{textAlign: 'center'}} width={1}>
-                    Powered by <a href="https://wavelet.perlin.net">Wavelet</a>. Click <a href="#">here</a> to learn how it works. Join our <a href="https://discord.gg/dMYfDPM">Discord</a> to get PERLs.
+                    Powered by <a href="https://wavelet.perlin.net">Wavelet</a>. Click <a href="#">here</a> to learn how it works, and <a href="https://github.com/perlin-network/decentralized-chat">here</a> for the source code. Join our <a href="https://discord.gg/dMYfDPM">Discord</a> to get PERLs.
                 </Box>
 
             </Flex>

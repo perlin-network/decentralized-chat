@@ -10717,10 +10717,10 @@ watchpack@^1.5.0:
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
 
-wavelet-client@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/wavelet-client/-/wavelet-client-1.0.6.tgz#70e1107a4e7298f0f45eba7d6f2727cdbcb3c7be"
-  integrity sha512-5CTGkQYAPrg+XKokBFndsZMJbT2FW6A0/RBSjJ5mYaH86We1e0lswikYUU+FhtLzIJYveB5UiJ7QjJkjOVvlVA==
+wavelet-client@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/wavelet-client/-/wavelet-client-1.0.7.tgz#6abd3a9f09d5f03fa936e4160496324fcaa7242a"
+  integrity sha512-w/0ppRHCQlO+vJxVPf1qCLEpOmWUan2Y3R0N+kcXmLpfF0LgIWLMbZYc4GcKPgAsEtMgI/1uWhv5vflRgMsUKQ==
   dependencies:
     atob "^2.1.2"
     axios "^0.19.0"

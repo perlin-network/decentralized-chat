@@ -2951,15 +2951,15 @@ core-js-pure@3.1.4:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.1.4.tgz#5fa17dc77002a169a3566cc48dc774d2e13e3769"
   integrity sha512-uJ4Z7iPNwiu1foygbcZYJsJs1jiXrTTCvxfLDXNhI/I+NHbSIEyr548y4fcsCEyWY0XgfAG/qqaunJ1SThHenA==
 
+core-js@2, core-js@^2.4.0:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
+  integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
+
 core-js@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.0.1.tgz#1343182634298f7f38622f95e73f54e48ddf4738"
   integrity sha512-sco40rF+2KlE0ROMvydjkrVMMG1vYilP2ALoRXcYR4obqbYIuV3Bg+51GEDW+HF8n7NRA+iaA4qD0nD9lo9mew==
-
-core-js@^2.4.0:
-  version "2.6.9"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
-  integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -10717,13 +10717,14 @@ watchpack@^1.5.0:
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
 
-wavelet-client@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/wavelet-client/-/wavelet-client-1.0.7.tgz#6abd3a9f09d5f03fa936e4160496324fcaa7242a"
-  integrity sha512-w/0ppRHCQlO+vJxVPf1qCLEpOmWUan2Y3R0N+kcXmLpfF0LgIWLMbZYc4GcKPgAsEtMgI/1uWhv5vflRgMsUKQ==
+wavelet-client@^1.10.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/wavelet-client/-/wavelet-client-1.1.0.tgz#013d1ea50af7eab7e408462195c7134dc606a59c"
+  integrity sha512-7P0ULXP/Cy+xNZ8uw3Boj0UL/zX3BeXuqRjOaMm28lTM1FmhKgOtb8F3byngVuvDxW12VD+/Dd5gsZAAq8F1LA==
   dependencies:
     atob "^2.1.2"
     axios "^0.19.0"
+    core-js "2"
     jsbi "^2.0.5"
     tweetnacl "^1.0.1"
     url "^0.11.0"

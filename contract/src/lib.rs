@@ -40,17 +40,17 @@ impl Chat {
         Self { logs: VecDeque::new() }
     }
 
-    fn send_message(&mut self, params: &mut Parameters) -> Result<(), Box<dyn Error>> {
+    fn send_message(&mut self, params: &mut Parameters) -> Result<(), String> {
         let entry = Entry { sender: params.sender, message: params.read() };
 
         // Ensure that messages are not empty.
         if entry.message.len() == 0 {
-            return Err("Message must not be empty.".into());
+            return Err("Message must not be empty.".to_string());
         }
 
         // Ensure that message are at most 240 characters.
         if entry.message.len() > MAX_MESSAGE_SIZE {
-            return Err(format!("Message must not be more than {} characters.", MAX_MESSAGE_SIZE).into());
+            return Err(format!("Message must not be more than {} characters.", MAX_MESSAGE_SIZE));
         }
 
         // Push chat message into logs.
@@ -62,7 +62,7 @@ impl Chat {
         Ok(())
     }
 
-    fn get_messages(&mut self, _params: &mut Parameters) -> Result<(), Box<dyn Error>> {
+    fn get_messages(&mut self, _params: &mut Parameters) -> Result<(), String> {
         let mut messages = Vec::new();
 
         for entry in &self.logs {

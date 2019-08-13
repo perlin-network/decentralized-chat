@@ -15,7 +15,7 @@ const App = () => {
     const [client, setClient] = useState(undefined);
     const [node, setNodeInfo] = useState(undefined);
     const [contractAddress, setContractAddress] = useState(
-        '6845582020708e2ed658e25628b2a79f976e47191002f42fe9e7e90be69373f3'
+        '42f9c917acd19fc685a5023744f49332a8d70ceb7d4d48d7f76f9ecc140f5e74'
     );
     const [contract, setContract] = useState(undefined);
     const [message, setMessage] = useState('');

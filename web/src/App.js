@@ -355,7 +355,7 @@ const App = () => {
                         }
                         onClick={sendMessage}
                     >
-                        Send Message [2 PERLs]
+                        Send Message [15 KENs]
                     </button>
                 </Box>
             </Flex>

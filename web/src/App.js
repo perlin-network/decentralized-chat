@@ -8,14 +8,14 @@ import JSBI from 'jsbi';
 const BigInt = JSBI.BigInt;
 
 const App = () => {
-    const [host, setHost] = useState('https://testnet.perlin.net');
+    const [host, setHost] = useState('https://devnet.perlin.net');
     const [privateKey, setPrivateKey] = useState(
         Buffer.from(Wavelet.generateNewWallet().secretKey, 'binary').toString('hex')
     );
     const [client, setClient] = useState(undefined);
     const [node, setNodeInfo] = useState(undefined);
     const [contractAddress, setContractAddress] = useState(
-        '74c566f88801646cc0fea0683a75fba9f5d0757b04fc0a1c679ede469cc4d4c9'
+        'eb30e9dd4d1594846f507d8e26da95da86ccd3dc6e9b3ba7f776fbd579e3c5ca'
     );
     const [contract, setContract] = useState(undefined);
     const [message, setMessage] = useState('');

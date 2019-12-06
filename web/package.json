@@ -11,7 +11,7 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2",
-    "wavelet-client": "2.0.0-rc.4",
+    "wavelet-client": "2.0.0-rc.5",
     "wavelet-faucet": "^0.1.1"
   },
   "scripts": {

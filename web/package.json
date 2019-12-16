@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "contract-deployer --postDeploy=\"npm run build\" --remote=http://ec2-18-207-218-134.compute-1.amazonaws.com:3011 --repo=perlin-network/decentralized-chat.git#himitsu --cargoPath=contract"
+    "deploy": "contract-deployer --postDeploy=\"npm run build\" --remote=http://ec2-18-207-218-134.compute-1.amazonaws.com:3011 --repo=perlin-network/decentralized-chat.git#himitsu --cargoPath=contract --envVarName=REACT_APP_CONTRACT_ID"
   },
   "eslintConfig": {
     "extends": "react-app"

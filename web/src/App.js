@@ -9,14 +9,14 @@ const { themes, FaucetButton } = waveletFaucet;
 const BigInt = JSBI.BigInt;
 
 const App = () => {
-    const [host, setHost] = useState(process.env.WAVELET_API_URL || 'https://devnet.perlin.net');
+    const [host, setHost] = useState(process.env.REACT_APP_WAVELET_API_URL || 'https://devnet.perlin.net');
     const [privateKey, setPrivateKey] = useState(
         Buffer.from(Wavelet.generateNewWallet().secretKey, 'binary').toString('hex')
     );
     const [client, setClient] = useState(undefined);
     const [node, setNodeInfo] = useState(undefined);
     const [contractAddress, setContractAddress] = useState(
-        process.env.CONTRACT_ID || 'fa4db75a55011ab413ab072c6399273e28bf08dbc2dcddb480e4a1b1daa4ae38'
+        process.env.REACT_APP_CONTRACT_ID || 'fa4db75a55011ab413ab072c6399273e28bf08dbc2dcddb480e4a1b1daa4ae38'
     );
     const [contract, setContract] = useState(undefined);
     const [message, setMessage] = useState('');

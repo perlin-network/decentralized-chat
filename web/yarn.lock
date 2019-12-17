@@ -2986,7 +2986,7 @@ content-type@~1.0.4:
 
 "contract-deployer@https://github.com/claudiucelfilip/contract-deployer.git":
   version "0.0.1"
-  resolved "https://github.com/claudiucelfilip/contract-deployer.git#b19d367509d9ef0bc4ae6e68713b47c2a481a178"
+  resolved "https://github.com/claudiucelfilip/contract-deployer.git#bcdff2c51597c464e07aed0d5e199b25312afedb"
   dependencies:
     body-parser "^1.19.0"
     express "^4.17.1"

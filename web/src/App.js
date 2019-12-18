@@ -1,21 +1,22 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Contract, Wavelet} from 'wavelet-client';
-import {FaucetButton} from "wavelet-faucet";
-import {themes} from "wavelet-faucet"
+import {Contract, Wavelet, TAG_TRANSFER} from 'wavelet-client';
+import waveletFaucet from "wavelet-faucet";
 import {Box, Flex} from '@rebass/grid';
 import JSBI from 'jsbi';
+
+const { themes, FaucetButton } = waveletFaucet;
 
 const BigInt = JSBI.BigInt;
 
 const App = () => {
-    const [host, setHost] = useState('https://testnet.perlin.net');
+    const [host, setHost] = useState(process.env.REACT_APP_WAVELET_API_URL || 'https://devnet.perlin.net');
     const [privateKey, setPrivateKey] = useState(
         Buffer.from(Wavelet.generateNewWallet().secretKey, 'binary').toString('hex')
     );
     const [client, setClient] = useState(undefined);
     const [node, setNodeInfo] = useState(undefined);
     const [contractAddress, setContractAddress] = useState(
-        '74c566f88801646cc0fea0683a75fba9f5d0757b04fc0a1c679ede469cc4d4c9'
+        process.env.REACT_APP_CONTRACT_ID || 'fa4db75a55011ab413ab072c6399273e28bf08dbc2dcddb480e4a1b1daa4ae38'
     );
     const [contract, setContract] = useState(undefined);
     const [message, setMessage] = useState('');
@@ -171,6 +172,12 @@ const App = () => {
         setMessage('');
     };
 
+    const accoutBalance = account && account.balance ? account.balance / Math.pow(10, 9) : 0;
+    const contractBalance = contractAccount && contractAccount.gas_balance ? contractAccount.gas_balance / Math.pow(10, 9) : 0;
+    const fee = client && contractAccount ? client.calculateFee(TAG_TRANSFER, contractAccount.public_key, 0, 250000, 0, 'send_message', {
+        type: 'string',
+        value: message
+    }): 0;
     return (
         <>
             <h2 className="text-center title">
@@ -299,9 +306,7 @@ const App = () => {
                     <label>[your balance]</label>
                 </Box>
                 <Box flex="1">
-          <span>{`${
-              account && account.balance ? account.balance : 0
-              } PERL(s)`}</span>
+                    <span>{accoutBalance} PERL(s)</span>
                 </Box>
             </Flex>
 
@@ -310,9 +315,7 @@ const App = () => {
                     <label>[contract gas balance]</label>
                 </Box>
                 <Box flex="1">
-          <span>{`${
-              contractAccount && contractAccount.gas_balance ? contractAccount.gas_balance : 0
-              } PERL(s)`}</span>
+          <span>{contractBalance} PERL(s)</span>
                 </Box>
             </Flex>
 
@@ -355,7 +358,7 @@ const App = () => {
                         }
                         onClick={sendMessage}
                     >
-                        Send Message [2 PERLs]
+                        Send Message [{fee} KENs]
                     </button>
                 </Box>
             </Flex>

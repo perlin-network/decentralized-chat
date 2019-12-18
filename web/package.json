@@ -11,16 +11,18 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2",
-    "wavelet-client": "^1.1.0",
+    "wavelet-client": "2.0.0-rc.6",
     "wavelet-faucet": "^0.1.1"
   },
+  "devDependencies": {
+    "contract-deployer": "https://github.com/claudiucelfilip/contract-deployer.git"
+  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "contract-deployer --postDeploy=\"npm run build\" --remote=http://ec2-18-207-218-134.compute-1.amazonaws.com:3011 --repo=perlin-network/decentralized-chat.git#himitsu --cargoPath=contract"
   },
   "eslintConfig": {
     "extends": "react-app"
